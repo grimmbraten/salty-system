@@ -1,0 +1,44 @@
+{
+  "name": "salty-system",
+  "description": "A salty node package to quickly generate salted hashes for system uuids",
+  "author": "Erik Grimmbråten <79856585+grimmbraten@users.noreply.github.com>",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= 8.5.0"
+  },
+  "bin": {
+    "salty": "src/main.js",
+    "salty-system": "src/main.js"
+  },
+  "scripts": {
+    "prepack": "yarn check:eslint",
+    "check:eslint": "yarn eslint ."
+  },
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "salt",
+    "hash",
+    "Polestar",
+    "systemid",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/grimmbraten/salty-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grimmbraten/salty-system"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "clipboardy": "^2.3.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}
