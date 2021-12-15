@@ -2,7 +2,7 @@
   "name": "salty-system",
   "description": "A salty node package to quickly generate salted hashes for system uuids",
   "author": "Erik Grimmbråten <79856585+grimmbraten@users.noreply.github.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">= 8.5.0"
   },

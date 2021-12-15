@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ora = require('ora');
 const clipboard = require('clipboardy');
 const { hashSync, genSaltSync } = require('bcryptjs');
