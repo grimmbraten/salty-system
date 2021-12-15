@@ -1,4 +1,4 @@
-A salty node package to quickly generate salted hashes for system uuids.
+A salty node package to quickly generate salted hashes for system UUIDs.
 
 ## Install
 
