@@ -27,6 +27,37 @@ yarn global upgrade salty-system --latest
 npm update -g salty-system
 ```
 
+## Usage
+
+```bash
+# input
+salty c2c5e1dc-7219-4450-9300-9013549b50c2
+
+# output (to clipboard)
+$2a$10$6IaEwf2ch4eXonRnWrs2xOjYumgu7fLvnsj6ba/0cFvVhi.dCveGq
+```
+
+```bash
+# input
+salty --id c2c5e1dc-7219-4450-9300-9013549b50c2 --name 'Salty user' --email 'salty@domain.com'
+
+# output (to terminal)
+{
+  id: 'c2c5e1dc-7219-4450-9300-9013549b50c2',
+  name: 'Salty user',
+  email: 'salty@domain.com',
+  hash: '$2a$10$1T9fyitJo0tHPL/RTDznsekGDJ0/Dw.Z2oZAHWPi0HLvyI7sMPcpe'
+}
+```
+
+```bash
+# input
+salty --copy --id c2c5e1dc-7219-4450-9300-9013549b50c2 --name 'Salty clipboard'
+
+# output (to clipboard)
+c2c5e1dc-7219-4450-9300-9013549b50c2, Salty clipboard, $2a$10$pRZ2V34HT77SpAUm0lLYTOB01XHKKEcbd9eYTvTgaElJakokpejEW
+```
+
 ## Uninstall
 
 ```bash
