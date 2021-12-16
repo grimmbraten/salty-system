@@ -17,7 +17,7 @@ npm install -g salty-system
 
 ![npms.io (maintenance)](https://img.shields.io/npms-io/maintenance-score/salty-system?style=flat&color=blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/grimmbraten/salty-system?style=flat&color=blue)
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/grimmbraten/salty-system/latest/master?style=flat&color=blue)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/grimmbraten/salty-system/latest/main?style=flat&color=blue)
 
 ```bash
 yarn global upgrade salty-system --latest
