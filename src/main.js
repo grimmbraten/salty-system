@@ -10,12 +10,12 @@ const [, , ...args] = process.argv;
 
 const spinner = ora('Generating salt').start();
 
-if (args.length === 0) spinner.fail('No arguments provided');
+if (args.length === 0) spinner.fail('Missing required arguments');
 else if (args.length === 1)
   if (args[0].length === 36) {
     clipboard.writeSync(hashSync(args[0], genSaltSync(10)));
     spinner.succeed('Salt copied to clipboard');
-  } else spinner.fail('Invalid argument');
+  } else spinner.warn('Invalid uuid');
 else {
   args.map((arg, index) => {
     if (arg === '--id') obj.id = args[index + 1];
@@ -28,11 +28,11 @@ else {
     obj.hash = hashSync(obj.id, genSaltSync(10));
 
     if (copy) {
-      clipboard.writeSync(Object.values(obj).join(', '));
+      clipboard.writeSync(JSON.stringify(obj, null, 2));
       spinner.succeed('Salt copied to clipboard');
     } else {
       spinner.succeed('Salt printed to console\n');
-      console.log(obj);
+      console.log(JSON.stringify(obj, null, 2));
     }
-  } else spinner.fail('Invalid argument');
+  } else spinner.warn('Invalid uuid');
 }
