@@ -43,10 +43,10 @@ salty --id c2c5e1dc-7219-4450-9300-9013549b50c2 --name 'Salty user' --email 'sal
 
 # output (to terminal)
 {
-  id: 'c2c5e1dc-7219-4450-9300-9013549b50c2',
-  name: 'Salty user',
-  email: 'salty@domain.com',
-  hash: '$2a$10$1T9fyitJo0tHPL/RTDznsekGDJ0/Dw.Z2oZAHWPi0HLvyI7sMPcpe'
+  "id": "c2c5e1dc-7219-4450-9300-9013549b50c2",
+  "name": "Salty user",
+  "email": "salty@domain.com",
+  "hash": "$2a$10$gQpghB5fjvSEXrYwwRdIjed0UCevdHHwYQ/UV2fli9IIIykx/PWMi"
 }
 ```
 
@@ -55,7 +55,11 @@ salty --id c2c5e1dc-7219-4450-9300-9013549b50c2 --name 'Salty user' --email 'sal
 salty --copy --id c2c5e1dc-7219-4450-9300-9013549b50c2 --name 'Salty clipboard'
 
 # output (to clipboard)
-c2c5e1dc-7219-4450-9300-9013549b50c2, Salty clipboard, $2a$10$pRZ2V34HT77SpAUm0lLYTOB01XHKKEcbd9eYTvTgaElJakokpejEW
+{
+  "id": "c2c5e1dc-7219-4450-9300-9013549b50c2",
+  "name": "Salty clipboard",
+  "hash": "$2a$10$gQpghB5fjvSEXrYwwRdIjed0UCevdHHwYQ/UV2fli9IIIykx/PWMi"
+}
 ```
 
 ## Uninstall
